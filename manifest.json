@@ -1,0 +1,31 @@
+{
+	"name": "Wipe For You",
+	"version": "0.1.0",
+	"description": "Remove the GitHub 'For You' section, for you.",
+	"homepage_url": "https://github.com/hisamafahri/wipe-for-you",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": {
+			"16": "/images/wfy16.png",
+			"32": "/images/wfy32.png",
+			"48": "/images/wfy48.png",
+			"128": "/images/wfy128.png"
+		},
+		"default_title": "Wipe For You"
+	},
+	"icons": {
+		"16": "/images/wfy16.png",
+		"32": "/images/wfy32.png",
+		"48": "/images/wfy48.png",
+		"128": "/images/wfy128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://github.com/*",
+				"https://gist.github.com/*"
+			],
+			"js": ["script.js"]
+		}
+	]
+}

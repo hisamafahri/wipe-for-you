@@ -1,0 +1,1 @@
+document.getElementsByClassName("js-feeds-tabs")[0].remove()
